@@ -14583,14 +14583,21 @@ Wir fassen diese beiden Bedingungen in einer Funktion $\mathbf{g} : \mathbb{R}^4
 $$
 \mathbf{g}(\mathbf{q}) = \mathbf{g}(\mathbf{q}_1, \mathbf{q}_2) = 
 \begin{pmatrix}
-{|\mathbf{q_1}|}^2 - L^2 \
-{|\mathbf{q_2} - \mathbf{q_1}|}^2 - L^2</p>
-<h1 id="%5Cend%7Bpmatrix%7D">\end{pmatrix}<a class="anchor-link" href="#%5Cend%7Bpmatrix%7D">&#182;</a></h1>\begin{pmatrix}
+{\|\mathbf{q_1}\|}^2 - L^2 \\
+{\|\mathbf{q_2} - \mathbf{q_1}\|}^2 - L^2 
+\end{pmatrix}
+$$
+bzw.
+$$
+\mathbf{g}(x_1, y_1, x_2, y_2) = 
+\begin{pmatrix}
 x_1^2 + y_1^2 - L^2 \\
 {(x_2 - x_1)}^2 + {(y_2 - y_1)}^2  - L^2 
-\end{pmatrix}$$
+\end{pmatrix}\,.
+$$
 Die Jacobi-Matrix $\mathbf{G}(\mathbf{q})$ von $\mathbf{g}(\mathbf{q})$ ist dann 
-$$<p>\mathbf{G}(\mathbf{q}) = 
+$$
+\mathbf{G}(\mathbf{q}) = 
 \begin{pmatrix}
 2 x_1 &amp; 2 y_1 &amp; 0 &amp; 0 \\
 -2(x_2 - x_1) &amp; -2(y_2 - y_1) &amp; 2(x_2 - x_1) &amp; 2(y_2 - y_1)
